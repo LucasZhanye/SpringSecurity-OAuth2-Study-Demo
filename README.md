@@ -4,4 +4,6 @@ Some demo for SpringSecurity OAuth2 on my blog
 
 ### oauth2-third-part-login
 这里是我的博客内关于第三方登录的示例代码。
-demo1 -> SpringSecurityOAuth2第三方登录初体验
+
+1. demo1 -> SpringSecurityOAuth2第三方登录初体验
+2. demo2 -> SpringSecurityOAuth2多个第三方登录配置

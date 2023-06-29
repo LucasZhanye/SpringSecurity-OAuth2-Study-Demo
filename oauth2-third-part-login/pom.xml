@@ -13,4 +13,8 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
+    <modules>
+        <module>demo1</module>
+        <module>demo2</module>
+    </modules>
 </project>

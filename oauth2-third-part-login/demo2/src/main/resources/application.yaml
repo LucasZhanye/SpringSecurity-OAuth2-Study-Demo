@@ -1,0 +1,22 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: xxxx # 填入自己应用的clientId
+            clientSecret: xxxxx # 填入自己应用的clientSecret
+            redirectUri: http://localhost:8844/login/oauth2/code/github
+          gitee:
+            clientId: xxxx # 填入自己应用的clientId
+            clientSecret: xxxxx # 填入自己应用的clientSecret
+            redirectUri: http://localhost:8844/login/oauth2/code/gitee
+            authorizationGrantType: authorization_code
+        provider:
+          gitee:
+            authorizationUri: https://gitee.com/oauth/authorize
+            tokenUri: https://gitee.com/oauth/token
+            userInfoUri: https://gitee.com/api/v5/user
+            userNameAttribute: name
+server:
+  port: 8844
