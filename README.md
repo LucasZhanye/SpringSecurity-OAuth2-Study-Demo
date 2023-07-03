@@ -7,3 +7,4 @@ Some demo for SpringSecurity OAuth2 on my blog
 
 1. demo1 -> SpringSecurityOAuth2第三方登录初体验
 2. demo2 -> SpringSecurityOAuth2多个第三方登录配置
+3. demo3 -> SpringSecurityOAuth2-微信授权登录

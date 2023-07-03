@@ -8,16 +8,29 @@ spring:
             clientSecret: xxxxx # 填入自己应用的clientSecret
             redirectUri: http://localhost:8844/login/oauth2/code/github
           gitee:
-            clientId: 69859723556cb37accf04c937c2731378619fb4c0915f5569dbdebc6e2e39403
-            clientSecret: 50a54027e1de4fcb390c9b38c329af709c4bc09efbfb67b96d1b81e20f42d9ba
+            clientId: xxxx # 填入自己应用的clientId
+            clientSecret: xxxx # 填入自己应用的clientSecret
             redirectUri: http://localhost:8844/login/oauth2/code/gitee
             authorizationGrantType: authorization_code
+          wechat:
+            clientId: wxc9a53f64266d8023
+            clientSecret: 1e5b25b3f72e4be6c0d9c88056c1b2e1
+            redirectUri: http://347b2d93.r8.cpolar.top/login/oauth2/code/wechat
+            authorizationGrantType: authorization_code
+            scope:
+              - snsapi_userinfo
+            clientName: tencent-wechat
         provider:
           gitee:
             authorizationUri: https://gitee.com/oauth/authorize
             tokenUri: https://gitee.com/oauth/token
             userInfoUri: https://gitee.com/api/v5/user
             userNameAttribute: name
+          wechat:
+            authorizationUri: https://open.weixin.qq.com/connect/oauth2/authorize
+            tokenUri: https://api.weixin.qq.com/sns/oauth2/access_token
+            userInfoUri: https://api.weixin.qq.com/sns/userinfo
+            userNameAttribute: nickname
 
 
 server:
